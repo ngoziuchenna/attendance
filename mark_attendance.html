@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Attendance</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Mark Attendance</h2>
+        <form action="proxy.php" method="post" id="markAttendanceForm">
+
+            <label for="userID">User ID:</label>
+            <input type="text" id="userID" name="userID" required>
+
+            <label for="isPresent">Present?</label>
+            <select id="isPresent" name="isPresent">
+                <option value="true">Yes</option>
+                <option value="false">No</option>
+            </select>
+
+            <label for="attendanceDate">Attendance Date:</label>
+            <input type="date" id="attendanceDate" name="attendanceDate" required>
+
+            <button type="submit">Submit Attendance</button>
+        </form>
+
+        
+        
+
+
+        
+    </div>
+</body>
+</html>
